@@ -78,9 +78,12 @@ class User():
      
      
     def ConsultarPass(self):
-        cursor.execute("select Password from users where Email = %s", (self.email,))
-        password = cursor.fetchone()
-        return password[0]
-            
+        try:
+            cursor.execute("select Password from users where Email = %s", (self.email,))
+            password = cursor.fetchone()
+            return password[0]
+        except:
+            print("Error, Posiblemente el correo no este registrado")
+            return False
 
 
