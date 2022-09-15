@@ -130,8 +130,8 @@ def menu():
             
             return r, emaillogin
     
-        nombrePersona,emailPersona = log(contador)
-        
+        nombrePersonatxt,emailPersona = log(contador)
+        nombrePersona= nombrePersonatxt
         
         
         

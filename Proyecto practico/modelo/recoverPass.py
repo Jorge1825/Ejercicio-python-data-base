@@ -35,7 +35,7 @@ class EnviarCorreo:
                         "Subject": "Recuperacion de contraseña MYNOTE.",
                         "TextPart": "My first Mailjet email",
                         "HTMLPart": """<p>Hemos detectado que presenta inconvenientes para iniciar sesión en su cuenta MYNOTE.
-                        A continuacion encontrará la contraseña de acceso a su cuenta MYNOTE.</p><br />
+                        A continuación encontrará la contraseña de acceso a su cuenta MYNOTE.</p><br />
                         CONTRASEÑA: {0} <br /><br /><br />Gracias por utilizar nuestros servicios.Cualquier duda o consulta no dude en contactarnos<br /><br />
                         <img src="https://play-lh.googleusercontent.com/1AaKzUP7GlKbKpil3TdkiCL01YxnowsMhN0unFoDKs92fBiUPGcL_nY1PhAoLBccx32D" width="200" height="200">
                         """.format(self.contrasena),

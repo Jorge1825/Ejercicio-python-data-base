@@ -2,10 +2,12 @@
 import modelo.conection as conexion 
 from datetime import datetime
 
-
-conec = conexion.conecction()
-database = conec[0]
-cursor = conec[1]
+try:
+    conec = conexion.conecction()
+    database = conec[0]
+    cursor = conec[1]
+except:
+    input("presione enter para continuar")
 
 
 class Nota():

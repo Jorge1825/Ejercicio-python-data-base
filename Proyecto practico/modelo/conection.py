@@ -36,11 +36,13 @@ def conecction():
                     
                     """)
         
+        print("Conectado a la base de datos")
+        
 
     except:
         print("No se pudo conectar a la base de datos")
         print("Presione enter para continuar, una vez que haya solucionado el problema")
 
-    
     return [database, micursor]
+    
 
